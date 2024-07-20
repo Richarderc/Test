@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html style="background-color: rgb(56, 56, 56);">
+    <head>
+        <title>
+         Calculator
+        </title>
+        <link rel="icon" type="Images/x-icon" href="Images/adad.jpg">
+        
+    </head>
+        <header style="background-color: rgb(0, 0, 0); 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        background-size: cover;">
+            <b> <span style="font-size: 54px; font-family: fantasy; color: aliceblue;
+                stroke: black; stroke-width: 10%;" ><g1>  Calculator</g1>
+                
+               
+               </span> <span style="font-size: 20px; color: white; font-family: 'Courier New', Courier, monospace;
+               " > teknologi terbaru dan terbaik sepanjang masa</span></b>\
+                 <br>
+                 <hr style="opacity: var(1%);">
+                 
+
+        </header>
+
+        <nav>
+            <button> Social Media </button>
+            <br>
+            <br>
+            <br>
+        </nav>
+        <style>
+                g1 {
+                color: white;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                }
+
+                
+        </style>
+        <body >
+            <form>
+
+                <label for="a1"style="color: white;"> Angka 1</label>
+                <input type="number" id="a1" name="a1" size="10" min="0" 
+                max="99999" > 
+
+                <br>
+                <br>
+
+                    <label for="Operasi" ></label>
+                    <select id="Operasi">
+                        <option value="0"> Kali </option>
+
+                        <option value="1"> tambah </option>
+
+                        <option value="2"> kurang </option>
+
+                        <option value="3"> bagi </option>
+                    </select>
+
+                <br>
+                <br>
+
+                <label for="a2"style="color: white;"> Angka 2</label>
+                <input type="number" id="a2" name="a2" size="10" min="0" 
+                max="99999" > 
+
+                <br>
+                <br>
+
+
+
+                
+                <button type="button" onclick="calculate()"><g1> Result</g1> </button>
+                <g1 id="demo"> Result</g1>
+                <script>    
+                    function calculate(){
+                        let a, b, c;
+                        a = document.getElementById('a1').value;
+                        b =  document.getElementById('a2').value;
+
+                        const Elements = document.getElementById('Operasi');
+
+                       
+
+
+                        switch(document.getElementById('Operasi').value) {
+                            case '0':
+                                c = a * b;
+                            break;
+                            case '1':
+                                c = parseFloat(a) + parseFloat(b);
+                            break;
+                            case '2':
+                                c = a - b;
+                            break;
+                            case '3':
+                                c = a / b;
+                            break;
+
+                        }
+                        document.getElementById("demo").innerHTML = "Jawaban :" + c;
+                    }
+                </script>
+
+            </form>
+          
+           
+            <footer style="margin: 10%;">
+                <a href="cuminfo.html">
+                    <button > <g1>  Back </g1> </button>
+
+                </a>
+
+            </footer>
+    
+        </body>    
+    
+
+
+
+
+
+</html>

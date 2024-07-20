@@ -1,0 +1,207 @@
+
+body{
+    background: radial-gradient( rgb(56, 8, 0), black);
+
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+     url('Images/Black_hole_-_Messier_87.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    border-color: white;
+    border-width: 1px;
+    border-style:solid;   
+    border-color: rgb(134, 0, 0);
+    border-radius: 20px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 1190px;
+    border-left-color: black;
+
+
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 57px;
+    text-shadow:0 5px 0 rgba(0, 0, 0, 0.243) ,0 20px 0 rgb(255, 98, 0), 0 40px 0 rgb(150, 70, 0), 0 60px rgba(225, 255, 0, 0.095);
+    font-variant-caps: all-petite-caps;
+    margin-top: -10px;
+
+}
+
+
+par{
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    font-style: italic;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(156, 156, 255), 0 0 5px rgb(49, 49, 237);
+   
+   
+}
+button{
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    color:rgb(255, 132, 0);
+
+    
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 219, 156), 0 0 5px rgb(237, 109, 49);
+    position:relative;
+    padding: 10px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(128, 64, 0);
+
+
+    background-color: rgb(42, 11, 11);
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    
+
+    transition: 0.1s;
+
+}
+.button1{
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    color:rgb(255, 132, 0);
+
+    
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 219, 156), 0 0 5px rgb(237, 109, 49);
+    position:relative;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(128, 64, 0);
+
+
+    background-color: rgb(42, 11, 11);
+    width: 72px;
+    height: 72px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: 0.1s;
+
+}
+
+button:hover{
+
+    
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 128, 0);
+    
+    transform: scale(1.2, 1.2);
+    animation: .1s ease-out 0s 1 running popUp;
+    
+
+}   
+
+@keyframes popUp{
+    
+    from{transform:scale(1,1)}
+    to{transform: scale(1.2, 1.2);}
+
+}
+@keyframes popBack{
+    0%{transform: scale(1, 1);}
+}
+
+@keyframes Rainbow{
+   
+}
+
+@keyframes RainbowTxt{
+    0%{color: red;}
+    25%{color: rgb(0, 0, 255);}
+    50%{color: rgb(0, 255, 0);}
+    100%{color: rgb(255, 0, 0);}
+}
+
+.centerkntl{
+    text-align: center;
+
+}
+.Calcbg{
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    border-width: 100px;
+    color: black;
+    height: 100vh;
+    width: 384px;
+}
+
+input{
+    position: relative;
+    
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+
+    width: 90%;
+    height: 60px;
+    border-color: tomato;
+    background-color: black;
+    color: white;
+    font-size:xx-large;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#centeredo{
+    border: 0px;
+    width: 500px;
+    margin: auto;
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+#centerede{
+    border: 0px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    
+}
+
+.odd{
+    color:white;
+}
+.even{
+    color: tomato;
+}
+hr{
+    width: 90%;
+    box-shadow: 2px 2px 2px white,
+}
+
+img{
+    border: 1px solid;
+    color:white;
+    transition: 0.1s;
+
+  
+
+}
+
+img:hover{
+    transform: scale(1.2, 1.2);
+    animation: .1s ease-out 0s 1 running popUp;
+}
